@@ -1,25 +1,29 @@
 {
-    "name": "notes-app-backend",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "scripts": {
-        "start": "NODE_ENV=production node ./src/server.js",
-        "dev": "nodemon ./src/server.js",
-        "lint": "eslint ./src"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@hapi/hapi": "^20.2.2",
-        "joi": "^17.7.0",
-        "nanoid": "^3.3.4"
-    },
-    "devDependencies": {
-        "eslint": "^8.25.0",
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-plugin-import": "^2.26.0",
-        "nodemon": "^2.0.20"
-    }
+	"name": "notes-app-backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"start": "NODE_ENV=production node ./src/server.js",
+		"dev": "nodemon ./src/server.js",
+		"lint": "eslint ./src",
+		"migrate": "node-pg-migrate"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@hapi/hapi": "^20.2.2",
+		"dotenv": "^16.0.3",
+		"joi": "^17.7.0",
+		"nanoid": "^3.3.4",
+		"node-pg-migrate": "^6.2.2",
+		"pg": "^8.8.0"
+	},
+	"devDependencies": {
+		"eslint": "^8.25.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.26.0",
+		"nodemon": "^2.0.20"
+	}
 }
