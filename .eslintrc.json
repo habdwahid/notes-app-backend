@@ -10,6 +10,9 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-        "no-console": "off"
+        "camelcase": "off",
+        "linebreak-style": "off",
+        "no-console": "off",
+        "no-underscore-dangle": "off"
     }
 }
